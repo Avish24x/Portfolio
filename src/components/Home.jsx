@@ -10,10 +10,13 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row">
         {/* Header */}
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
+          <h2 className="group text-xl sm:text-7xl font-bold text-white mt-14  md:mb-0">
+            I'm a Full Stack
+            <span className="text-transparent    bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 px-1">
+              Developer
+            </span>
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-gray-500 py-4 max-w-md ">
             I'm fascinated by the power of an idea to change the world! I enjoy
             programming since it allows me to communicate my interests. Over the
             last few years, I've been studying Software Development. College,
