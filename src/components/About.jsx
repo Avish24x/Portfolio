@@ -15,7 +15,7 @@ const About = () => {
         <p className="text-l mt-4  max-h-screen">
           Having cultivated a keen eye for detail, I take pride in crafting
           visually appealing and responsive websites. However, my expertise
-          extends beyond aesthetics – I possess a strong grasp of back-end
+          extends beyond aesthetics –I possess a strong grasp of back-end
           development, allowing me to build robust and efficient server-side
           functionalities. What sets me apart is my unwavering commitment to
           refining my craft. I approach challenges with a solution-oriented
