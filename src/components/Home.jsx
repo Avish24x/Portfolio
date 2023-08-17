@@ -12,7 +12,11 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <h2 className="group text-xl sm:text-7xl font-bold text-white mt-14  md:mb-0">
             I'm a Full Stack
-            <span className="text-transparent    bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 px-1">
+            <span
+              className="bg-gradient-to-r bg-clip-text  text-transparent 
+            from-purple-400 via-pink-600 to-purple-950
+            animate-text ml-2"
+            >
               Developer
             </span>
           </h2>
