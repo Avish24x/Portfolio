@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Experiance from "./components/Experiance";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import PortFolio from "./components/PortFolio";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <PortFolio />
       <Experiance />
+      {/* <Footer /> */}
       <SocialLinks />
     </div>
   );
