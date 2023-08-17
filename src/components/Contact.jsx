@@ -6,7 +6,11 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800  p-4 text-white"
     >
-      <div>
+      <div
+        className="
+h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+"
+      >
         <div>
           <p>Contact</p>
           <p>Submit the form below to get in touch with me</p>
