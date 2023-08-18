@@ -30,14 +30,14 @@ const Contact = () => {
           <form
             action="https://getform.io/f/d4617733-2db0-4f7c-b3f9-2cedd42710f7"
             method="POST"
-            className="flex flex-col w-full md:w-1/2 lg:mr-10 lg:pt-10 lg:pb-0 sm:px-10"
+            className="flex flex-col w-full md:w-1/2 px-4 lg:mr-10 lg:pt-10 lg:pb-0 sm:px-10"
           >
             <input
               type="text"
               name="name"
               id=""
               placeholder="enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none sm:px-4"
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none   px-4sm:px-4"
             />
             <input
               type="text"
