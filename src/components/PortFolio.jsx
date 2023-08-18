@@ -16,26 +16,38 @@ const PortFolio = () => {
     {
       id: 1,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
     {
       id: 2,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
     {
       id: 3,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
     {
       id: 4,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
     {
       id: 5,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
     {
       id: 6,
       src: arrayDestruct,
+      demoLink: "",
+      codeLink: "",
     },
   ];
   return (
@@ -55,7 +67,7 @@ const PortFolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 items-center justify-center">
           {/* looping throught the array of portfolios */}
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
