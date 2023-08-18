@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import profileImage from "../assets/profile.jpg";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+
 const Home = () => {
   return (
     <div

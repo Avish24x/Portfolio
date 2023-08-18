@@ -2,9 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="w-full h-1/2 bg-gradient-to-b from-gray-800 to-black text-white">
       <div>
-        <h2>©Created by Avish Taukoorah</h2>
+        <h2
+          className="py-6 flex items-center justify-center text-transparent   bg-gradient-to-r bg-clip-text 
+            from-purple-400 via-pink-600 to-purple-950
+            animate-text"
+        >
+          ©Created by Avish Taukoorah
+        </h2>
       </div>
     </div>
   );
