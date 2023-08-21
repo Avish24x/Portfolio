@@ -11,10 +11,10 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row">
         {/* Header */}
         <div className="flex flex-col justify-center h-full">
-          <h2 className="group text-xl sm:text-7xl font-bold text-white mt-14  md:mb-0">
+          <h2 className="group text-xl sm:text-7xl font-bold text-white mt-14  md:mb-0 mr-2">
             I'm a Full Stack
             <span
-              className="bg-gradient-to-r bg-clip-text  text-transparent 
+              className=" bg-gradient-to-r bg-clip-text  text-transparent 
             from-purple-400 via-pink-600 to-purple-950
             animate-text ml-2"
             >
