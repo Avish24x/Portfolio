@@ -42,6 +42,21 @@ const NavBar = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
+      {/* Desktop navigation */}
+      <ul className="hidden md:flex">
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 hover:text-white"
+          >
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Mobile navigation */}
       {nav && (
         <ul className="flex flex-col justify-center items-center md:hidden absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600">
           {links.map(({ id, link }) => (
