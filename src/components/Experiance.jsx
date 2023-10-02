@@ -12,7 +12,7 @@ import Ruby from "../assets/xuby.png";
 import Bootstrap from "../assets/Bootstrap.png";
 import jQuery from "../assets/einn.png";
 import SQL from "../assets/sql-removebg-preview.png";
-import java from "../assets/Java-removebg-preview.png";
+// import java from "../assets/Java-removebg-preview.png";
 import node from "../assets/node.png";
 import figma from "../assets/Figma-removebg-preview.png";
 
@@ -95,12 +95,12 @@ const Experiance = () => {
       style: "shadow-orange-200",
     },
     // JAVA
-    {
-      id: 12,
-      src: java,
-      title: "Java",
-      style: "shadow-pink-300",
-    },
+    // {
+    //   id: 12,
+    //   src: java,
+    //   title: "Java",
+    //   style: "shadow-pink-300",
+    // },
     {
       id: 13,
       src: node,
@@ -136,7 +136,7 @@ const Experiance = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="html image" className="w-20 mx-auto" />
+              <img src={src} alt="html " className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

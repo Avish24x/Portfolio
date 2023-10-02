@@ -3,53 +3,45 @@ import { AiOutlineEye } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 
 // importing images from assets>portfolio.
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/arrayDestruct.jpg";
-import navbar from "../assets/portfolio/arrayDestruct.jpg";
-import reactParallax from "../assets/portfolio/arrayDestruct.jpg";
-import reactSmooth from "../assets/portfolio/arrayDestruct.jpg";
-import reactWeather from "../assets/portfolio/arrayDestruct.jpg";
+import Docunet from "../assets/portfolio/Docunet.PNG";
+import AiCompanion from "../assets/portfolio/AiCompanion.PNG";
+import Travel from "../assets/portfolio/Travel.PNG";
+import Thread from "../assets/portfolio/Thread.PNG";
 
 const PortFolio = () => {
   // this is to display the array of projects images
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
+      src: Docunet,
+      demoLink: "https://docunet-theta.vercel.app/",
+      codeLink: "https://github.com/Avish24x/Docunet",
     },
     {
       id: 2,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
+      src: AiCompanion,
+      demoLink: "https://ai-companion-coral.vercel.app/",
+      codeLink: "https://github.com/Avish24x/ai-companion",
     },
     {
       id: 3,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
+      src: Thread,
+      demoLink: "https://thread-gray.vercel.app/",
+      codeLink: "https://github.com/Avish24x/Thread.",
     },
     {
       id: 4,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
-    },
-    {
-      id: 5,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
-    },
-    {
-      id: 6,
-      src: arrayDestruct,
-      demoLink: "",
-      codeLink: "",
+      src: Travel,
+      demoLink: "https://travell-red.vercel.app/",
+      codeLink: "https://github.com/Avish24x/travell",
     },
   ];
+
+  // Function to open the link in a new tab
+  const openLinkInNewTab = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <div
       name="portfolio"
@@ -80,6 +72,7 @@ const PortFolio = () => {
                   className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105 flex items-center  
                   text-white
                   hover:text-purple-400 to-pink-600"
+                  onClick={() => openLinkInNewTab(demoLink)}
                 >
                   <span className="mr-2">
                     <AiOutlineEye size={25} />
@@ -90,6 +83,7 @@ const PortFolio = () => {
                   className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105 flex items-center
                  text-white
                  hover:text-purple-400 to-pink-600"
+                  onClick={() => openLinkInNewTab(codeLink)}
                 >
                   <span className="mr-2">
                     <AiFillGithub size={25} />
