@@ -20,10 +20,8 @@ const Home = () => {
           pointerEvents: "none",
         }}
         numParticles={1500}
-        particleSpeed={0}
         dx={0.000000011}
         dy={0.000000111}
-        starColor="rgba(226, 31, 255, 0.1)" // Change the color here (e.g., white with 70% opacity)
       />
 
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
