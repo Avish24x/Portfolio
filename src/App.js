@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import PortFolio from "./components/PortFolio";
 import SocialLinks from "./components/SocialLinks";
 import { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   // useEffect(() => {

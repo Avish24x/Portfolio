@@ -29,9 +29,11 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div>
-        <h1 className="text-5xl font-Brand capitalize ml-2">Milesh</h1>
+        <a href="/" className="text-5xl font-Brand capitalize ml-2">
+          Milesh
+        </a>
       </div>
 
       {/* Hamburger menu */}

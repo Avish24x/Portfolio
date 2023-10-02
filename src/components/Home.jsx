@@ -1,14 +1,32 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import profileImage from "../assets/profile.jpg";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+import StarfieldAnimation from "react-starfield-animation"; // Import the StarfieldAnimation component
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 relative" // Add "relative" class
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row">
+      {/* Add the StarfieldAnimation component */}
+      <StarfieldAnimation
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          pointerEvents: "none",
+        }}
+        numParticles={1500}
+        particleSpeed={0}
+        dx={0.000000011}
+        dy={0.000000111}
+        starColor="rgba(226, 31, 255, 0.1)" // Change the color here (e.g., white with 70% opacity)
+      />
+
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         {/* Header */}
         <div className="flex flex-col justify-center h-full">
           <h2 className="group text-xl sm:text-7xl font-bold text-white mt-14  md:mb-0 mr-2">
@@ -33,16 +51,30 @@ const Home = () => {
             a positive impact on people's lives."
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 cursor-pointer"
+            >
               Portfolio
               <span className="px-2 group-hover:rotate-90 duration-300">
-                <BsFillArrowRightCircleFill size={25} className="ml-3" />
+                <BsFillArrowRightCircleFill size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         {/* Profile Image */}
-        <div className="md:w-1/2 lg:w-1/3 xl:w-full ">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 180, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        />
+        <div className="md:w-1/2 lg:w-1/3 xl:w-full z-10">
           <img
             src={profileImage}
             alt="myprofile"

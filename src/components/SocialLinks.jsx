@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -24,15 +24,7 @@ const SocialLinks = () => {
       ),
       href: "https://github.com/Avish24x",
     },
-    {
-      id: 3,
-      child: (
-        <>
-          Facebook <FaFacebook size={30} />
-        </>
-      ),
-      href: "https://www.facebook.com/avish.taukoorah?mibextid=ZbWKwL.com",
-    },
+
     {
       id: 4,
       child: (
